@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**AKM Tag Bot**, Grup veya kanaldaki bütün userleri tağ etmek üçün bot ★\nDaha çox məlumat üç7n **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Meni Bir Qrupa Elave Et', 'https://t.me/akmtagbot?startgroup=a'),
                       Button.url('📣 Resmi Qrup', 'https://t.me/sohbet_akm'),
