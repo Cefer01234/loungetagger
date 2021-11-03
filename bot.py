@@ -25,21 +25,21 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**AKM Tag Bot**, Grup veya kanaldaki bütün userleri tağ etmek üçün bot ★\nDaha çox məlumat üç7n **/help**'i tıklayın.",
+  await event.reply("**TRUE Tag Bot**, Grup veya kanaldaki bütün userleri tağ etmek üçün bot ★\nDaha çox məlumat üç7n **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Qrupa Elave Et', 'https://t.me/akmtagbot?startgroup=a'),
-                      Button.url('📣 Resmi Qrup', 'https://t.me/sohbet_akm'),
+                      [Button.url('🌟 Meni Bir Qrupa Elave Et', 'https://t.me/TrueAzeTagBot?startgroup=a'),
+                      Button.url('📣 Resmi Qrup', 'https://t.me/trueaze'),
                       Button.url('🚀 Sahibim', 'https://t.me/shirnovff')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Loungetagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
+  helptext = "**True Tagger'in kömək **\n\nKomut: /all \n  Bu komutu, userləri tağ edəndə mətinlə birlikdə işlətmək üçündür \n`Məsələn: /all Günaydın!`  \nBu komutu reply olarag istifadə edə bilərsiniz. her hansı bir mesaj Bot, reply olunan mesaja userləri etiketliyəcəkdir"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Qrupa Elave et', 'https://t.me/akmtagbot?startgroup=a'),
-                       Button.url('📣 Resmi Qrup', 'https://t.me/sohbet_akm'),
+                      [Button.url('🌟 Meni Bir Qrupa Elave et', 'https://t.me/TrueAzeTagBot?startgroup=a'),
+                       Button.url('📣 Resmi Qrup', 'https://t.me/trueaze'),
                       Button.url('🚀 Sahibim', 'https://t.me/shirnovff')]
                     ),
                     link_preview=False
